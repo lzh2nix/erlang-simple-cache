@@ -5,7 +5,7 @@
          delete/1,
          lookup/1]).
 
--define(TABLE_ID, ?MDDULE).
+-define(TABLE_ID, ?MODULE).
 
 init()->
     ets:new(?TABLE_ID, [public, named_table]),

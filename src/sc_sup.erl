@@ -12,7 +12,7 @@ start_link() ->
 start_child(Value, LeaseTime) ->
     supervisor:start_child(?SERVER, [Value, LeaseTime]).
 
-init()->
+init([])->
     Element = {sc_element, {sc_element, start_link,[]},
                temporary, brutal_kill, worker, [sc_element]},
     Children = [Element],
