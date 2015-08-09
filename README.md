@@ -1,2 +1,2 @@
 ###
-simple code for erlang and OTP in Action
+sample code for erlang and OTP in Action
